@@ -1,0 +1,187 @@
+
+body{
+	margin: 0px;
+	font-size: 40px;
+	font-family: monospace;
+	background: #E4E4E4;
+	color: black;
+	padding-bottom: 10px;
+}
+.Header a{
+	background-color: #8C0603;
+}
+a{
+	text-decoration:none;
+}
+
+form a{
+	background: #cdcdcd;
+	padding-top:10px;
+	padding-bottom:10px;
+	color: black;
+	text-decoration: none;
+	font-size: 64px;
+	display: block;
+	margin-top:20px;
+	margin: auto;
+	width: 90%;
+}
+form p a{
+	width: 100%;
+}
+form p{
+	margin: auto;
+	width: 90%;
+}
+form a:hover{
+	background: #BBBBBB;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration:underline;
+}
+#centerBox{
+	text-align:center;
+}
+.hWords{
+	padding-top:50px;
+	padding-bottom: 50px;
+	margin-left: 5px;
+}
+.Logo{
+	color:white;
+	height: 200px;
+	font-size: 90px;
+}
+.Logo img{
+	width: 200px;
+	border: 3px solid #404040;
+	background-color: white;
+}
+.Logo:hover a{
+	text-decoration: none;
+}
+.Logo{
+	display: flex;
+	justify-content: center;
+}
+
+.Logo div{
+	
+	display: flex;
+	justify-content: center;
+}
+
+input[type=text], input[type=password], input[type=file], select{
+	padding: 0;
+	height: 90px;
+	position: relative;
+	left: 0;
+	outline: none;
+	border: 1px solid #cdcdcd;
+	border-color: rgba(0, 0, 0, .15);
+	background-color: white;
+	font-size: 64px;
+	width: 100%;
+	text-align: center;
+	margin-left: -1px;
+}
+
+input[type=submit]{
+	
+	font-size: 64px;
+	height: 90px;
+	width: 100%;
+}
+
+
+.smallSelect{
+	width:100px;
+}
+
+.secretMenu{
+	text-align: right;
+	margin-top:-200px;
+	margin-left:75%;
+}
+
+.secretMenu a{
+	color:#cdcdcd;
+	display: block;
+	height:200px;
+	width: 200px;
+}
+
+.targetPic{
+	width:90%;
+	image-orientation: from-image;
+}
+
+ol{
+	width: 80%;
+	display: block;
+	text-align: left;
+	margin: auto;
+}
+
+.circlePics{
+	width: 250px;
+}
+
+@media screen and (min-width: 1080px) {
+	body{
+		font-size: 16px;
+	}
+	.Logo{
+		height: 100px;
+		font-size: 32px;
+	}
+	.Logo img{
+		width: 100px;
+	}
+	input[type=text], input[type=password], input[type=file], select {
+		font-size: 16px;
+		height: 30px;
+	}
+	.hWords{
+		padding-top:30px;
+		padding-bottom: 30px;
+	}
+	input[type=submit]{
+	
+		font-size: 16px;
+		height: 30px;
+	}
+	
+	form a{
+		width: 20%;
+		font-size: 16px;
+		width: 100%;
+
+	}
+	
+	form p a{
+		font-size: 16px;
+	}
+
+	form p{
+		width: 20%;
+	}
+	.targetPic{
+		width:30%;
+	}
+	ol{
+		width: 50%;
+	}
+	.circlePics{
+		width: 100px;
+	}
+
+	.statsDiv{
+		display: inline-flex;
+	}
+	.statsDiv div{
+		display: block;
+		margin:10px;
+	}
+}
