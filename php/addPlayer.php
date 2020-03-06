@@ -42,7 +42,7 @@
 
             // Create connection
             $conn = new mysqli($servername, $username, $password, $dbname);
-           
+            
             
             // Check connection
             if($conn->connect_error) {
@@ -112,12 +112,13 @@
 
                     if ($fname != "" and $lname != "" and $ucid != "" and $building != "None"){
 
-                        $target_dir = "pics/";
+                        $target_dir = "/pics/";
                         $target_file = $target_dir . basename($_FILES["pic"]["name"]);
+                       
                         $uploadOk = 1;
                         $pictureExt = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
                         $tf = $target_dir . $ucid . "." . $pictureExt;
-
+                        
                         $check = getimagesize($_FILES["pic"]["tmp_name"]);
 
                         if($check !== false) {
@@ -127,11 +128,12 @@
                             echo "File is not an image.";
                             $uploadOk = 0;
                         }
-
+                            
                         if ($uploadOk == 0) {
                             echo "Sorry, your file was not uploaded.";
                         // if everything is ok, try to upload file
                         } else {
+                            
                             if (move_uploaded_file($_FILES["pic"]["tmp_name"], $tf)) {
                                 //echo "The file ". basename( $_FILES["pic"]["name"]). " has been uploaded.";
                                 $filename = $tf; /*ADD YOUR FILENAME WITH PATH*/
@@ -216,13 +218,16 @@
                                         $result = mysqli_query($conn, $sql);
                                         $row = mysqli_fetch_assoc($result);
                                         $targetsName = $row['First Name'] . " " . $row['Last Name'];
+                                        //mysqli_free_result($result);
 
                                     }else{
                                         $targetPin = $pin;
                                     }
 
-                                    $sql = "INSERT INTO `rha`.`RHA Assassin` (`First Name`, `Last Name`, `UCID`, `Pin`, `Target Pin`, `Is Alive`, `Building`, `Kills`, `Time Of Death`) VALUES ('" . $fname ."', '". $lname ."', '". $ucid."', '" . $pin ."', '" . $targetPin ."', '1', '". $building ."', '0', '0');";
-                                    $result = mysqli_query($conn, $sql);
+                                    $mysql = "INSERT INTO `RHA Assassin` (`First Name`, `Last Name`, `UCID`, `Pin`, `Target Pin`, `Is Alive`, `Building`, `Kills`, `Time Of Death`) 
+                                    VALUES ('$fname', '$lname', '$ucid', '$pin', '$targetPin', '1', '$building', '0',NOW())";
+                                    // Add Now() because time of death want a time
+                                    $result = mysqli_query($conn, $mysql);
                                     echo "<p>Player Added</p><p>Name: $fname $lname </p><p>UCID: $ucid</p>"; 
                                     echo "<p>Pin: $pin </p>";
                                 }
@@ -271,8 +276,8 @@
                     }
                 }
             }
-            
-            if (isset($_COOKIE['cookieun']) and $cookieun != ""){ //check if loged in and display admin home
+            mysqli_close($conn);
+            if (isset($_COOKIE['cookieun']) and $cookieun != ""){ //check if logged in and display admin home
                 ?>
                     <h2>Add Player</h2>
                     <form name="addPlayer" method="post" action="addPlayer.php" enctype="multipart/form-data">
