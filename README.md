@@ -25,4 +25,6 @@ To run this project, using Apache Web Server that supports php and mysql:
 ```
 Download all files on local machine
 Download MobaXterm(Windows) or FileZilla(Mac)
+[MobaXterm](https://mobaxterm.mobatek.net/) and [FileZilla](https://filezilla-project.org/)
+ 
 ```
