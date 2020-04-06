@@ -16,7 +16,7 @@ This project was created for Residence Hall Association Battle Of Halls event.
 	
 ## Technologies
 Project is created with:
-* Front-End: HTML, CSS, and Javascript
+* Front-End: HTML, CSS
 * Back-End: PHP and MySql
 	
 ## Setup
