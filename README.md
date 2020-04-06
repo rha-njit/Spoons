@@ -1,6 +1,6 @@
 # Spoons (Assassins Game on the Web)
 
-##Game for Residence Hall Association Battle Of Halls
+## Game for Residence Hall Association Battle Of Halls
 
 A Full-Stack Website Game:
 
