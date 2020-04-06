@@ -20,8 +20,9 @@ Project is created with:
 * Back-End: PHP and MySql
 	
 ## Setup
-To run this project, install it locally using npm:
+To run this project, using Apache Web Server that supports php and mysql:
 
 ```
-$
+Download all files on local machine.
+Download MobaXterm(Windows) or FileZilla(Mac)
 ```
