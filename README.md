@@ -11,6 +11,7 @@ Host on a Apache Web Server.
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Features](#features)
+* [Status](#status)
 
 ## General info
 This project was created for Residence Hall Association Battle Of Halls event.
@@ -41,3 +42,5 @@ List of features ready and TODOs for future development
 To-do list:
 * Front-End Design need to be improve
 * Back-End Security updates
+## Status
+Project is: _in progress_ 
