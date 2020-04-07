@@ -3,7 +3,6 @@
 
 <head>
 <title>Home</title>
-<meta name="author" content="Jason A. Laboy">
 <script>
 
 </script>
@@ -23,10 +22,7 @@
                 </a>
             </div>
         <?php 
-            $servername = "sql1.njit.edu";
-            $username = "rha";
-            $password = "xghZnL9vN";
-            $dbname = "rha";
+           include( "db_connect_info.php" );
 
             $cookieun = "";	
             if (isset($_COOKIE['cookieun'])){

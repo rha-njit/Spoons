@@ -2,7 +2,7 @@
 
 A Full-Stack Website Game:
 
-Using HTML, CSS, and PHP with MySQL.
+Using HTML, CSS, JavaScript and PHP with MySQL.
 
 Host on a Apache Web Server.
 
@@ -18,12 +18,13 @@ This project was created for Residence Hall Association Battle Of Halls event.
 	
 ## Technologies
 Project is created with:
-* Front-End: HTML, CSS
+* Front-End: HTML, CSS, and JavaScript
 * Back-End: PHP and MySql
 	
 ## Setup
 To run this project, on the Apache Web Server that supports PHP and MySql:
 * Download all files on local machine
+* Add a db_connect-info.php file with database info to project
 * Download MobaXterm(Windows) or FileZilla(Mac)
 * [MobaXterm](https://mobaxterm.mobatek.net/)
 * [FileZilla](https://filezilla-project.org/)
