@@ -10,6 +10,7 @@ Host on a Apache Web Server.
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [Features](#features)
 
 ## General info
 This project was created for Residence Hall Association Battle Of Halls event.
@@ -30,3 +31,13 @@ Download MobaXterm(Windows) or FileZilla(Mac)
 Use FileZilla or MobaXterm to drag files on to Apache Web Server
 Go to Website Address for viewing
 ```
+## Features
+List of features ready and TODOs for future development
+* Login for Admins
+* Assign players a pin
+* Assign targets for players
+* List of people that have been defeated in the game
+
+To-do list:
+* Front-End Design need to be improve
+* Back-End Security updates
