@@ -3,7 +3,6 @@
 
 <head>
 <title>Elimination Feed</title>
-<meta name="author" content="Jason A. Laboy">
 
 
 <link rel="stylesheet" type="text/css" href="MainStyle.css">
@@ -31,10 +30,7 @@
             $br = "<br />"; $hr = "<hr />";
             
 
-            $servername = "sql1.njit.edu";
-            $username = "rha";
-            $password = "xghZnL9vN";
-            $dbname = "rha";
+            include( "db_connect_info.php" );
 
 			
             

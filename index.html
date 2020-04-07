@@ -3,7 +3,6 @@
 
 <head>
 <title>Home</title>
-<meta name="author" content="Jason A. Laboy">
 <meta name="description" content="RHA Spoons game! Try to eliminate your target.">
 <meta name="keywords" content="Spoons, Assassin, RHA, NJIT, School, College, Game, StayOnCampusStayConected, BOTH, Battle of the halls, Reslife">
 <script>

@@ -3,7 +3,6 @@
 
 <head>
 <title>Thanos Snap</title>
-<meta name="author" content="Jason A. Laboy">
 <script>
 
 </script>
@@ -27,15 +26,8 @@
             
             $br = "<br />"; $hr = "<hr />";
             
-
-            $servername = "sql1.njit.edu";
-            $username = "rha";
-            $password = "xghZnL9vN";
-            $dbname = "rha";
-
-			
+            include( "db_connect_info.php" );
             
-
             // Create connection
             $conn = new mysqli($servername, $username, $password, $dbname);
            
