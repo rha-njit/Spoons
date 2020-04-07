@@ -24,6 +24,7 @@ Project is created with:
 ## Setup
 To run this project, on the Apache Web Server that supports PHP and MySql:
 * Download all files on local machine
+* Add a db_connect-info.php file with database info to project
 * Download MobaXterm(Windows) or FileZilla(Mac)
 * [MobaXterm](https://mobaxterm.mobatek.net/)
 * [FileZilla](https://filezilla-project.org/)
